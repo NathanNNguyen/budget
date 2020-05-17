@@ -4,13 +4,13 @@ import Expenses from './components/Expenses';
 import Transactions from './components/Transactions';
 import AddTransactions from './components/AddTransactions';
 
-import './App.css';
+import './App.scss';
 
 function App() {
 
   return (
     <div className="App">
-      <h2>Budget</h2>
+      <h2>Budget App</h2>
       <div className='container'>
         <Balance />
         <Expenses />

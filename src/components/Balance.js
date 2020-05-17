@@ -10,8 +10,18 @@ function Balance() {
 
   return (
     <>
-      <h4>Balance</h4>
-      <h1>${total}</h1>
+      {total > 0 ?
+        <div>
+          <h4 className='balance'>Your balance</h4>
+          <h1 className={total < 0 ? 'minus' : 'plus'}>${total}</h1>
+          <p>You're in a good place <span role='img' aria-label='happy'>😋</span></p>
+        </div> :
+        <div>
+          <h4 className='balance'>Your balance</h4>
+          <h1 className={total < 0 ? 'minus' : 'plus'}>${total}</h1>
+          <p className='minus'>You've gone over your limit <span role='img' aria-label='sad'>😩</span></p>
+        </div>}
+
     </>
   )
 }

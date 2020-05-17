@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { add } from '../action';
 
@@ -47,7 +47,7 @@ const AddTransactions = () => {
           <label htmlFor="amount">
             Amount
             <br />
-            ( + income, - expense )
+            ( <span className='plus'>+ income</span> &nbsp; <span className='minus'>- expense</span> )
             </label>
           <input
             name='amount'
@@ -59,7 +59,9 @@ const AddTransactions = () => {
         </div>
         <button
           onClick={submit}
-          className="btn">Add transaction</button>
+          className="btn">Add transaction
+          <span></span></button>
+
       </form>
     </>
   )
