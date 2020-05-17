@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { add } from '../action';
 import { useDispatch } from 'react-redux';
+import { add } from '../action';
 
 const AddTransactions = () => {
 
@@ -36,8 +36,8 @@ const AddTransactions = () => {
         <div className="form-control">
           <label htmlFor="text">Transaction</label>
           <input
-            value={input.text}
             name='text'
+            value={input.text}
             onChange={handleInput}
             type="text"
             placeholder="Enter transaction"
@@ -47,11 +47,11 @@ const AddTransactions = () => {
           <label htmlFor="amount">
             Amount
             <br />
-            ( + income, - expense )
+            ( <span className='plus'>+ income</span> &nbsp; <span className='minus'>- expense</span> )
             </label>
           <input
-            value={input.amount}
             name='amount'
+            value={input.amount}
             onChange={handleInput}
             type="number"
             placeholder="Enter amount"
@@ -59,7 +59,9 @@ const AddTransactions = () => {
         </div>
         <button
           onClick={submit}
-          className="btn">Add transaction</button>
+          className="btn">Add transaction
+          <span></span></button>
+
       </form>
     </>
   )
