@@ -8713,14 +8713,6 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
-redux@^4.0.0-rc.1:
-  version "4.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.0-rc.1.tgz#80ec04db9837711dbf67e8f1915726dbcdbcbd88"
-  integrity sha512-5IP07Fd76jNX0edDrWpF09DLNtOoe1ZOCEIqg402jrvBBWLQ046c1uMlAC9imapuOLVTv8pYvJHuzN7wydrPCA==
-  dependencies:
-    loose-envify "^1.1.0"
-    symbol-observable "^1.2.0"
-
 redux@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"

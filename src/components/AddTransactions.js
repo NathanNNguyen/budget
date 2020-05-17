@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { add } from '../action';
+import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux';
+import { add } from '../action';
 
 const AddTransactions = () => {
 
@@ -36,8 +36,8 @@ const AddTransactions = () => {
         <div className="form-control">
           <label htmlFor="text">Transaction</label>
           <input
-            value={input.text}
             name='text'
+            value={input.text}
             onChange={handleInput}
             type="text"
             placeholder="Enter transaction"
@@ -50,8 +50,8 @@ const AddTransactions = () => {
             ( + income, - expense )
             </label>
           <input
-            value={input.amount}
             name='amount'
+            value={input.amount}
             onChange={handleInput}
             type="number"
             placeholder="Enter amount"
