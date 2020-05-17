@@ -1,9 +1,8 @@
-<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). -->
 # Budget App
 
 A simple project built with React / Redux allows user to track their expenses, data persists to localStorage for users if need to use it again.
 
-[Live](https://budget-tracker.now.sh)
+[Live](https://nn-budget-tracker.now.sh)
 
 ## Available Scripts
 

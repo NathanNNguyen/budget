@@ -10,7 +10,7 @@ function Balance() {
 
   return (
     <>
-      {total > 0 ?
+      {total >= 0 ?
         <div>
           <h4 className='balance'>Your balance</h4>
           <h1 className={total < 0 ? 'minus' : 'plus'}>${total}</h1>
